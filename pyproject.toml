@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "petropt"
+version = "0.1.0"
+description = "Open-source Python library for petroleum & reservoir engineering — PVT correlations, Arps decline curves, Vogel/Fetkovich IPR, Beggs-Brill multiphase flow, material balance, well log I/O, and public datasets. MIT licensed."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Groundwork Analytics LLC", email = "info@petropt.com" },
+    { name = "Mehrdad G. Shirangi" },
+]
+keywords = [
+    "petroleum-engineering", "reservoir-engineering", "oil-gas",
+    "decline-curve", "Arps", "PVT", "Standing", "Vogel", "IPR",
+    "well-logs", "LAS", "production-data", "Z-factor", "Beggs-Brill",
+    "material-balance", "relative-permeability", "open-source",
+    "Fetkovich", "Darcy-Weisbach", "STOIIP", "economics", "NPV",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "lasio>=0.31",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dlis = ["dlisio>=0.3"]
+notebooks = ["jupyter", "matplotlib"]
+all = ["dlisio>=0.3", "jupyter", "matplotlib"]
+
+[project.urls]
+Homepage = "https://petropt.com"
+Repository = "https://github.com/petropt/petropt"
+Documentation = "https://petropt.com/docs"
+"Online Tools" = "https://tools.petropt.com"
+"Advanced Analytics" = "https://petropt.com/suite"
+Issues = "https://github.com/petropt/petropt/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["petropt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
