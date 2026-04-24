@@ -10,4 +10,5 @@ venv/
 .DS_Store
 .ipynb_checkpoints/
 .claude/
+CLAUDE.md
 docs/SESSION_HANDOFF.md
