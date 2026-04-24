@@ -8,6 +8,6 @@
 >>> petropt.io.read_las("well.las")
 """
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
-from petropt import correlations, datasets, io, petrophysics, qc, rta, economics
+from petropt import correlations, datasets, drilling, io, petrophysics, production, qc, rta, economics

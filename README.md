@@ -70,6 +70,17 @@ npv = petropt.economics.npv(cash_flows=[-500000, 80000, 70000, 60000], discount_
 - **Flowing material balance** — contacted OOIP/OGIP from producing-well data
 - **Linear flow** — sqrt(t) analysis, sqrt(k)·xf extraction from fracture wells
 
+### Drilling
+- **Well control** — hydrostatic, ECD, MAASP, kill mud weight, ICP/FCP (Driller's / Wait-and-Weight)
+- **Hydraulics** — annular velocity, nozzle TFA, bit pressure drop
+- **Tubulars** — Barlow burst with API 0.875 factor, full API 5C3 collapse (yield / plastic / transition / elastic regimes)
+
+### Production Engineering
+- **Liquid loading** — Turner (1969) and Coleman (1991) critical droplet-lift velocities
+- **Flow assurance** — Katz hydrate formation temperature, Hammerschmidt methanol/MEG/ethanol inhibitor dosing
+- **Piping** — API RP 14E erosional velocity
+- **Choke flow** — Gilbert (1954) critical-flow rate correlation
+
 ### Economics
 - NPV, IRR, payback period, oil & gas monthly cashflow (WI/NRI/severance/opex/capex)
 
