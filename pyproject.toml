@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "petropt"
-version = "0.1.0"
-description = "Open-source Python library for petroleum & reservoir engineering — PVT correlations, Arps decline curves, Vogel/Fetkovich IPR, Beggs-Brill multiphase flow, material balance, well log I/O, and public datasets. MIT licensed."
+version = "0.3.0"
+description = "Open-source Python library for petroleum & reservoir engineering — PVT, IPR, decline, multiphase flow, material balance, petrophysics (Archie/Simandoux/Timur), rate transient analysis (Blasingame / Agarwal-Gardner / NPI), drilling (API 5C3 collapse, Barlow burst), production (Turner/Coleman/Katz/Gilbert), economics, well log I/O. MIT licensed."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
@@ -19,6 +19,13 @@ keywords = [
     "well-logs", "LAS", "production-data", "Z-factor", "Beggs-Brill",
     "material-balance", "relative-permeability", "open-source",
     "Fetkovich", "Darcy-Weisbach", "STOIIP", "economics", "NPV",
+    "petrophysics", "Archie", "Simandoux", "Indonesian", "Timur",
+    "Coates", "Vshale", "Larionov", "net-pay", "RTA",
+    "Blasingame", "Agarwal-Gardner", "NPI", "flowing-material-balance",
+    "linear-flow", "drilling", "API-5C3", "Barlow", "ECD",
+    "kill-mud", "MAASP", "collapse-pressure", "burst-pressure",
+    "production", "Turner", "Coleman", "Katz", "Gilbert",
+    "Hammerschmidt", "hydrate", "erosional-velocity", "API-RP-14E",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
