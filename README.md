@@ -34,6 +34,12 @@ q = petropt.correlations.arps_decline(qi=1000, di=0.05, b=0.5, t=t)
 # IPR: Vogel inflow performance
 ipr = petropt.correlations.vogel_ipr(qmax=1500, pr=3500, num_points=50)
 
+# Petrophysics: water saturation from resistivity
+sw = petropt.petrophysics.archie_sw(rt=20.0, phi=0.20, rw=0.05)
+
+# RTA: Blasingame variables for type-curve matching
+bg = petropt.rta.blasingame_variables(t, q, cum, pwf, pi=3000)
+
 # Economics: NPV of a well
 npv = petropt.economics.npv(cash_flows=[-500000, 80000, 70000, 60000], discount_rate=0.10, periods_per_year=1)
 ```
@@ -50,6 +56,19 @@ npv = petropt.economics.npv(cash_flows=[-500000, 80000, 70000, 60000], discount_
 - **Relative Permeability** — Corey, Brooks-Corey, LET models (oil/water/gas)
 - **Material Balance** — Gas P/Z, Havlena-Odeh, OOIP estimation, drive indices
 - **Volumetrics** — STOIIP, GIIP, drainage radius, recovery factor
+
+### Petrophysics
+- **Vshale** — linear, Larionov (Tertiary / older), Clavier
+- **Porosity** — density, sonic (Wyllie / Raymer-Hunt-Gardner), neutron-density, effective
+- **Water saturation** — Archie, Simandoux, Indonesian (Poupon-Leveaux)
+- **Permeability** — Timur, Coates (NMR)
+- **Pay** — cutoff-based net pay, NTG, pay-weighted averages, hydrocarbon pore thickness
+
+### Rate Transient Analysis (RTA)
+- **Transforms** — pressure-normalized rate, material balance time
+- **Type curves** — Blasingame, Agarwal-Gardner, NPI variables
+- **Flowing material balance** — contacted OOIP/OGIP from producing-well data
+- **Linear flow** — sqrt(t) analysis, sqrt(k)·xf extraction from fracture wells
 
 ### Economics
 - NPV, IRR, payback period, oil & gas monthly cashflow (WI/NRI/severance/opex/capex)

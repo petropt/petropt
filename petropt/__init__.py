@@ -3,9 +3,11 @@
 >>> import petropt
 >>> petropt.datasets.load_sample_production()
 >>> petropt.correlations.standing_bubble_point(api=35, gas_sg=0.65, temp=200)
+>>> petropt.petrophysics.archie_sw(rt=20.0, phi=0.20, rw=0.05)
+>>> petropt.rta.blasingame_variables(t, q, cum, pwf, initial_pressure=3000)
 >>> petropt.io.read_las("well.las")
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
-from petropt import correlations, datasets, io, qc, economics
+from petropt import correlations, datasets, io, petrophysics, qc, rta, economics
