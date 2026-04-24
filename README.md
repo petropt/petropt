@@ -110,6 +110,10 @@ npv = petropt.economics.npv(cash_flows=[-500000, 80000, 70000, 60000], discount_
 
 petropt is **MIT licensed** — use it freely in commercial projects, consulting, research, and AI applications. No copyleft restrictions.
 
+## History
+
+This repository was first initiated 8 years ago, in July 2018 (see [`master` branch](https://github.com/petropt/petropt/tree/master) for the original placeholder). Most of the code was developed and used privately over the years. We consolidated the collected work and released the open-source version on April 24, 2026.
+
 ## For AI Builders
 
 ```bash
