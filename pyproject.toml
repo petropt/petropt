@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "petropt"
-version = "0.3.0"
+version = "0.3.1"
 description = "Open-source Python library for petroleum & reservoir engineering — PVT, IPR, decline, multiphase flow, material balance, petrophysics (Archie/Simandoux/Timur), rate transient analysis (Blasingame / Agarwal-Gardner / NPI), drilling (API 5C3 collapse, Barlow burst), production (Turner/Coleman/Katz/Gilbert), economics, well log I/O. MIT licensed."
 readme = "README.md"
 license = "MIT"
@@ -58,9 +58,9 @@ all = ["dlisio>=0.3", "jupyter", "matplotlib"]
 [project.urls]
 Homepage = "https://petropt.com"
 Repository = "https://github.com/petropt/petropt"
-Documentation = "https://petropt.com/docs"
+Documentation = "https://tools.petropt.com/docs/"
 "Online Tools" = "https://tools.petropt.com"
-"Advanced Analytics" = "https://petropt.com/suite"
+"Enterprise Support" = "https://petropt.com/enterprise"
 Issues = "https://github.com/petropt/petropt/issues"
 
 [tool.hatch.build.targets.wheel]

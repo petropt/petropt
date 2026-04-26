@@ -7,7 +7,7 @@
 
 > Free, open-source petroleum engineering tools for Python. MIT licensed — use anywhere, no restrictions.
 
-**[Online Calculators](https://tools.petropt.com)** · **[Documentation](https://petropt.com/docs)** · **[Advanced Analytics](https://petropt.com/suite)**
+**[Online Calculators](https://tools.petropt.com)** · **[Documentation](https://tools.petropt.com/docs/)** · **[Enterprise Support](https://petropt.com/enterprise)**
 
 ## Install
 
@@ -107,6 +107,7 @@ npv = petropt.economics.npv(cash_flows=[-500000, 80000, 70000, 60000], discount_
 | **Student notebooks** | Yes | No | No |
 | **Web calculators** | [tools.petropt.com](https://tools.petropt.com) | No | No |
 | **Economics** | NPV, IRR, cashflow | No | Manual |
+| **Need more?** | [Enterprise support, custom correlations, training](https://petropt.com/enterprise) — by Groundwork Analytics | — | — |
 
 petropt is **MIT licensed** — use it freely in commercial projects, consulting, research, and AI applications. No copyleft restrictions.
 
@@ -123,8 +124,9 @@ pip install petro-mcp  # MCP server that wraps petropt for Claude/ChatGPT/LLMs
 ## Links
 
 - [tools.petropt.com](https://tools.petropt.com) — Free online PE calculators
-- [petropt.com/suite](https://petropt.com/suite) — Advanced analytics (Bayesian DCA, ML, anomaly detection)
-- [petropt.com](https://petropt.com) — Groundwork Analytics
+- [tools.petropt.com/docs/](https://tools.petropt.com/docs/) — Documentation
+- [petropt.com/enterprise](https://petropt.com/enterprise) — Enterprise support, custom correlations, training (Groundwork Analytics)
+- [github.com/petropt/petropt](https://github.com/petropt/petropt) — Source, issues, releases
 
 ## Citation
 
