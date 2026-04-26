@@ -109,7 +109,7 @@ npv = petropt.economics.npv(cash_flows=[-500000, 80000, 70000, 60000], discount_
 | **Economics** | NPV, IRR, cashflow | No | Manual |
 | **Need more?** | [AI tools, agents, and apps](https://petropt.com/enterprise) for oil & gas — by Groundwork Analytics | — | — |
 
-petropt is **MIT licensed** — use it freely in commercial projects, consulting, research, and AI applications. No copyleft restrictions.
+petropt is **MIT licensed** — use it freely in commercial products, research, classrooms, and AI applications. No copyleft restrictions.
 
 ## History
 
