@@ -7,11 +7,11 @@
 >>> petropt.rta.blasingame_variables(t, q, cum, pwf, initial_pressure=3000)
 >>> petropt.io.read_las("well.las")
 
-For paid support, custom correlations, field-specific calibration, or
-training — see <https://petropt.com/enterprise> (Groundwork Analytics).
+For more — dashboards, AI agents, automation across your wells —
+sign up free at <https://app.petropt.com> (Groundwork Analytics).
 """
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
 
 from petropt import correlations, datasets, drilling, io, petrophysics, production, qc, rta, economics
 
@@ -36,7 +36,7 @@ def _show_one_time_banner() -> None:
         return
     sys.stderr.write(
         f"petropt {__version__} · docs: tools.petropt.com/docs/ · "
-        f"enterprise: petropt.com/enterprise · "
+        f"platform (free): app.petropt.com · "
         f"silence: export PETROPT_QUIET=1\n"
     )
 
